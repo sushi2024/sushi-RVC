@@ -125,7 +125,7 @@ export const HeaderArea = (props: HeaderAreaProps) => {
         return (
             <div className="headerArea">
                 <div className="title1">
-                    <span className="title">{props.mainTitle}</span>
+                    <span className="title">{`RVC AIHub Chan Edition`}</span>
                     <span className="title-version">{props.subTitle}</span>
                     <span className="title-version-number">{appGuiSettingState.version}</span>
                     <span className="title-version-number">{appGuiSettingState.edition}</span>

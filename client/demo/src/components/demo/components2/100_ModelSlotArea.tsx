@@ -47,13 +47,17 @@ export const ModelSlotArea = (_props: ModelSlotAreaProps) => {
                 const iconElem =
                     x.iconFile.length > 0 ? (
                         <>
+<<<<<<< Updated upstream
                             {/* <img className="model-slot-tile-icon" src={serverSetting.serverSetting.voiceChangerParams.model_dir + "/" + x.slotIndex + "/" + x.iconFile.split(/[\/\\]/).pop()} alt={x.name} /> */}
                             <img className="model-slot-tile-icon" src={icon} alt={x.name} />
+=======
+                            <img className="model-slot-tile-icon" src={serverSetting.serverSetting.voiceChangerParams.model_dir + "/" + x.slotIndex + "/" + x.iconFile.split(/[\/\\]/).pop() ? serverSetting.serverSetting.voiceChangerParams.model_dir + "/" + x.slotIndex + "/" + x.iconFile.split(/[\/\\]/).pop() : "./assets/ai-chan-3.png"} alt={x.name} />
+>>>>>>> Stashed changes
                             <div className="model-slot-tile-vctype">{x.voiceChangerType}</div>
                         </>
                     ) : (
                         <>
-                            <div className="model-slot-tile-icon-no-entry">no image</div>
+                            <img className="model-slot-tile-icon" src={"./assets/ai-chan-3.png"} alt={x.name} />
                             <div className="model-slot-tile-vctype">{x.voiceChangerType}</div>
                         </>
                     );

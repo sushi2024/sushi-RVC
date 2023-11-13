@@ -56,21 +56,23 @@ export const AdvancedSettingDialog = () => {
                         <div>
                             <div>overlap:</div>
                             <div>
-                                <select
-                                    className="body-select"
-                                    value={serverSetting.serverSetting.crossFadeOverlapSize}
-                                    onChange={(e) => {
-                                        serverSetting.updateServerSettings({ ...serverSetting.serverSetting, crossFadeOverlapSize: Number(e.target.value) as CrossFadeOverlapSize });
-                                    }}
-                                >
-                                    {Object.values(CrossFadeOverlapSize).map((x) => {
-                                        return (
-                                            <option key={x} value={x}>
-                                                {x}
-                                            </option>
-                                        );
-                                    })}
-                                </select>
+                                <div className="body-select-container">
+                                    <select
+                                        className="body-select"
+                                        value={serverSetting.serverSetting.crossFadeOverlapSize}
+                                        onChange={(e) => {
+                                            serverSetting.updateServerSettings({ ...serverSetting.serverSetting, crossFadeOverlapSize: Number(e.target.value) as CrossFadeOverlapSize });
+                                        }}
+                                    >
+                                        {Object.values(CrossFadeOverlapSize).map((x) => {
+                                            return (
+                                                <option key={x} value={x}>
+                                                    {x}
+                                                </option>
+                                            );
+                                        })}
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div>

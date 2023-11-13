@@ -78,7 +78,8 @@ class MMVC_Rest:
             app_fastapi.mount("/model_dir_static", StaticFiles(directory=f"{MODEL_DIR_STATIC}"), name="static")
 
             if sys.platform.startswith("darwin"):
-                p1 = os.path.dirname(sys._MEIPASS)
+                path = getattr(sys, '_MEIPASS', os.getcwd())
+                p1 = os.path.dirname(path)
                 p2 = os.path.dirname(p1)
                 p3 = os.path.dirname(p2)
                 model_dir = os.path.join(p3, voiceChangerParams.model_dir)

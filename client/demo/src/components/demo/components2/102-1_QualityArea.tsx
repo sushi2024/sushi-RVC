@@ -104,6 +104,7 @@ export const QualityArea = (props: QualityAreaProps) => {
                 <div className="config-sub-area-control">
                     <div className="config-sub-area-control-title">F0 Det.:</div>
                     <div className="config-sub-area-control-field">
+                    <div className="body-select-container">
                         <select
                             className="body-select"
                             value={serverSetting.serverSetting.f0Detector}
@@ -113,6 +114,7 @@ export const QualityArea = (props: QualityAreaProps) => {
                         >
                             {f0DetOptions}
                         </select>
+                        </div>
                     </div>
                 </div>
                 <div className="config-sub-area-control">

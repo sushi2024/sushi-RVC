@@ -114,6 +114,7 @@ export const ConvertArea = (props: ConvertProps) => {
                 <div className="config-sub-area-control">
                     <div className="config-sub-area-control-title">GPU:</div>
                     <div className="config-sub-area-control-field">
+                    <div className="body-select-container">
                         <select
                             className="body-select"
                             value={serverSetting.serverSetting.gpu}
@@ -130,6 +131,7 @@ export const ConvertArea = (props: ConvertProps) => {
                                 );
                             })}
                         </select>
+                        </div>
                     </div>
                 </div>
             );
@@ -138,6 +140,7 @@ export const ConvertArea = (props: ConvertProps) => {
                 <div className="config-sub-area-control">
                     <div className="config-sub-area-control-title">CHUNK:</div>
                     <div className="config-sub-area-control-field">
+                    <div className="body-select-container">
                         <select
                             className="body-select"
                             value={setting.workletNodeSetting.inputChunkNum}
@@ -155,11 +158,13 @@ export const ConvertArea = (props: ConvertProps) => {
                                 );
                             })}
                         </select>
+                        </div>
                     </div>
                 </div>
                 <div className="config-sub-area-control">
                     <div className="config-sub-area-control-title">EXTRA:</div>
                     <div className="config-sub-area-control-field">
+                    <div className="body-select-container">
                         <select
                             className="body-select"
                             value={serverSetting.serverSetting.extraConvertSize}
@@ -176,6 +181,7 @@ export const ConvertArea = (props: ConvertProps) => {
                                 );
                             })}
                         </select>
+                        </div>
                     </div>
                 </div>
                 {gpuSelect}

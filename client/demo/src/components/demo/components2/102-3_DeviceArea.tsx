@@ -94,6 +94,7 @@ export const DeviceArea = (_props: DeviceAreaProps) => {
             <div className="config-sub-area-control">
                 <div className="config-sub-area-control-title left-padding-1">input</div>
                 <div className="config-sub-area-control-field">
+                <div className="body-select-container">
                     <select
                         className="body-select"
                         value={audioInputForGUI}
@@ -119,6 +120,7 @@ export const DeviceArea = (_props: DeviceAreaProps) => {
                             );
                         })}
                     </select>
+                    </div>
                 </div>
             </div>
         );
@@ -432,6 +434,7 @@ export const DeviceArea = (_props: DeviceAreaProps) => {
             <div className="config-sub-area-control">
                 <div className="config-sub-area-control-title left-padding-1">output</div>
                 <div className="config-sub-area-control-field">
+                <div className="body-select-container">
                     <select
                         className="body-select"
                         value={audioOutputForGUI}
@@ -448,6 +451,7 @@ export const DeviceArea = (_props: DeviceAreaProps) => {
                             );
                         })}
                     </select>
+                    </div>
                 </div>
             </div>
         );
@@ -654,6 +658,7 @@ export const DeviceArea = (_props: DeviceAreaProps) => {
             <div className="config-sub-area-control">
                 <div className="config-sub-area-control-title left-padding-1">monitor</div>
                 <div className="config-sub-area-control-field">
+                <div className="body-select-container">
                     <select
                         className="body-select"
                         value={audioMonitorForGUI}
@@ -670,6 +675,7 @@ export const DeviceArea = (_props: DeviceAreaProps) => {
                             );
                         })}
                     </select>
+                    </div>
                 </div>
             </div>
         );

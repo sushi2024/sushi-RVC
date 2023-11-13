@@ -60,6 +60,7 @@ export const RecorderArea = (_props: RecorderAreaProps) => {
                     <div className="config-sub-area-control-title">output</div>
                     <div className="config-sub-area-control-field">
                         <div className="config-sub-area-control-field-auido-io">
+                        <div className="body-select-container">
                             <select className="body-select" value={audioOutputForAnalyzer} onChange={(e) => {
                                 setAudioOutputForAnalyzer(e.target.value)
                                 const wavInput = document.getElementById(AUDIO_ELEMENT_FOR_SAMPLING_INPUT) as HTMLAudioElement
@@ -78,6 +79,7 @@ export const RecorderArea = (_props: RecorderAreaProps) => {
                                     }).filter(x => { return x != null })
                                 }
                             </select>
+                            </div>
                         </div>
                     </div>
                 </div>
